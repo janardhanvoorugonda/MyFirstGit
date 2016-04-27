@@ -1,0 +1,58 @@
+<form >
+<fieldset>
+
+
+
+<!-- Form Name -->
+<legend>General Information</legend>
+
+<!-- Fuel UX Select http://getfuelux.com/javascript.html#selectlist -->
+<div class="form-group">
+  <label class="control-label" for="Sales Data to be Used:">Sales Data to be Used:</label>
+  <div class="controls text-left">
+    <div class="btn-group selectlist" data-initialize="selectlist" data-resize="auto" id="Sales Data to be Used:">
+      <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+        <span class="selected-label">&nbsp;</span>
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+        <li data-value="Sell In Volume"><a href="#">Sell In Volume</a></li>
+        <li data-value="Sell Through Volume"><a href="#">Sell Through Volume</a></li>
+        <li data-value="Sell Out Volume"><a href="#">Sell Out Volume</a></li>
+        <li data-value="Activation Volume"><a href="#">Activation Volume</a></li>
+      </ul>
+      <input class="hidden hidden-field" name="Sales Data to be Used:" readonly="readonly" aria-hidden="true" type="text">
+    </div>
+    
+  </div>
+</div>
+<!-- Fuel UX Radios http://getfuelux.com/javascript.html#radio -->
+<div class="form-group">
+  <label for="radios" class="control-label">Is B2B?</label>
+  <div class="">
+    <div class="radio">
+      <label class="radio-custom" data-initialize="radio" id="radios-0">
+        <input class="sr-only" name="radios" type="radio" value="Yes">
+        <span class="radio-label">Yes</span>
+      </label>
+    </div><div class="radio">
+      <label class="radio-custom" data-initialize="radio" id="radios-1">
+        <input class="sr-only" name="radios" type="radio" value="No">
+        <span class="radio-label">No</span>
+      </label>
+    </div>
+    
+  </div>
+</div>
+<!-- Text input http://getbootstrap.com/css/#forms -->
+<div class="form-group">
+  <label for="textinput" class="control-label">End User Name</label>
+  
+    <input type="text" class="form-control" id="textinput" placeholder="placeholder">
+    
+  
+</div>
+
+</fieldset>
+</form>
